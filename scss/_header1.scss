@@ -10,23 +10,36 @@ html{
 .header1 {
     position: relative;
     height: 100vh;
-                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                             
 }
 
 .slideshow {
-    width: 100%;
+    width: auto;
     height: 100%;
     z-index: -1;
     overflow: hidden;
+    
 }
 
 .slideshow img {
     position: absolute;
     animation: slideshow 100s infinite;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     opacity: 0;
+    @include phone{
+      height: 90rem;
+      object-fit: scale-down;
+      width: auto;
+    }
+    @include tablet{
+      width: auto;
+      height: 100vh;
+    }
+    @include laptop{
+      width: 99vw;
+      height: 100vh;
+    }
   }
   
   @keyframes slideshow {
@@ -73,6 +86,9 @@ html{
     font-size: 2rem;
     z-index:2;
     color: $slate;
+    @include phone{
+      object-position: 19% 0;
+    }
 }
 
 .title1:hover {
@@ -91,6 +107,13 @@ html{
   padding-left: 40rem;
   font-family: 'Ibarra Real Nova', serif;
   color: $slate;
+  @include phone{
+    font-size: 2rem ;
+    letter-spacing: normal;
+    justify-content: start;
+    padding-left: 3rem;
+    padding-top: 10rem;
+}
 }
 
 .projects{
@@ -188,3 +211,5 @@ html{
           }
         }
       }
+
+  

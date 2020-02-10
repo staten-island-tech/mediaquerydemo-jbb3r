@@ -14,6 +14,9 @@
   font-size: 8rem;
   letter-spacing: .5rem;
   overflow: hidden;
+  @include phone{
+    font-size: 4rem;
+  }
 }
 .title2:hover {
 color: $pink;
@@ -51,6 +54,9 @@ width: 100%;
   transform: translateY(15rem);
   width:100rem;
   font-family: 'Ibarra Real Nova', serif;
+  @include phone{
+    justify-content: start;
+  }
 }
 
 .f1 {
