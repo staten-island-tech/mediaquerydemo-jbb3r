@@ -14,6 +14,19 @@
   font-size: 8rem;
   letter-spacing: .5rem;
   overflow: hidden;
+  @include phone {
+    font-size: 5rem;
+    left: 22%;
+    top: 1%;
+  }
+  @include tablet {
+    top: 2%;
+    left: 35%;
+  }
+  @include laptop {
+    top: 1%;
+    left: 33%;
+  }
 }
 .title2:hover {
 color: $pink;
@@ -51,6 +64,19 @@ width: 100%;
   transform: translateY(15rem);
   width:100rem;
   font-family: 'Ibarra Real Nova', serif;
+  @include phone {
+    margin-left: 1em;
+    width: 34rem;
+  }
+  @include tablet {
+    margin-left: 10rem;
+    width: 80rem;
+    transform: translateY(30rem);
+  }
+  @include laptop {
+    margin-left: 6.5rem;
+    transform: translateY(20rem);
+  }
 }
 
 .f1 {
