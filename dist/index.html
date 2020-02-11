@@ -11,21 +11,35 @@
   </head>
 
   <body>
-   <div id="main">
-    <header class="header1">
-       <div class="slideshow">
-          <img src="css/img/slideshow/cloud1.jpg" alt="slide 1">
-          <img src="css/img/slideshow/cloud2.jpg" alt="slide 2">
-          <img src="css/img/slideshow/cloud3.jpg" alt="slide 3">
-          <img src="css/img/slideshow/cloud4.jpg" alt="slide 4">
-          <img src="css/img/slideshow/cloud5.jpg" alt="slide 5">
-          <img src="css/img/slideshow/cloud6.jpg" alt="slide 6">
-          <img src="css/img/slideshow/cloud7.jpg" alt="slide 7">
-          <img src="css/img/slideshow/cloud8.jpg" alt="slide 8">
-          <img src="css/img/slideshow/cloud9.jpg" alt="slide 9">
-      </div>
-
-      <div class="gallery">
+   <section id=header1 class=header1>
+    <div class="slideshow">
+      <img src="css/img/slideshow/cloud1.jpg" alt="slide 1">
+      <img src="css/img/slideshow/cloud2.jpg" alt="slide 2">
+      <img src="css/img/slideshow/cloud3.jpg" alt="slide 3">
+      <img src="css/img/slideshow/cloud4.jpg" alt="slide 4">
+      <img src="css/img/slideshow/cloud5.jpg" alt="slide 5">
+      <img src="css/img/slideshow/cloud6.jpg" alt="slide 6">
+      <img src="css/img/slideshow/cloud7.jpg" alt="slide 7">
+      <img src="css/img/slideshow/cloud8.jpg" alt="slide 8">
+      <img src="css/img/slideshow/cloud9.jpg" alt="slide 9">
+  </div>
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="gallery">
       <div class="title1">gallery.</div>
       </div>
     
@@ -34,9 +48,8 @@
       <div class="about">about.</div>
       <div class="contact">contact.</div>
      </div>
+    </section>
 
-    </header>
-    
     <section id="header2" class="header2">
       <h2 class="title2">projects.</h2>
       <div class="projectwork">
@@ -48,27 +61,5 @@
           <div><button class="ssrightbtn" onclick="plusDivs(-1)"><i class="fas fa-chevron-right"></i></button></div>
         </div>
       </section>
-
-      <script>
-        //for header2 slideshow gallery
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-      function plusDivs(n) {
-      showDivs(slideIndex += n);
-        }
-
-      function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("flexcloud");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-      }
-      x[slideIndex-1].style.display = "block";  
-      }
-      </script>
-   </div>
   </body>
 </html>
