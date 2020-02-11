@@ -16,17 +16,17 @@ $laptop-min: 900px;
 // Laptop = 1140 x 900
 
 @mixin phone{
-    @media (min-width: #{$phone-min}) and (max-width: #{$phone-max}) {
-      @content;
-    }
+  @media (min-width: #{$phone-min}) and (max-width: #{$phone-max}) {
+    @content;
   }
-  @mixin tablet{
-    @media (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}) {
-      @content;
-    }
+}
+@mixin tablet{
+  @media (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}) {
+    @content;
   }
-  @mixin laptop{
-    @media (min-width: #{$laptop-min}) and (max-width: #{$laptop-max}) {
-      @content;
-    }
+}
+@mixin laptop{
+  @media (min-width: #{$laptop-min}) and (max-width: #{$laptop-max}) {
+    @content;
   }
+}
