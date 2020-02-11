@@ -318,12 +318,6 @@ html {
   color: #f3eaea;
 }
 
-@media (min-width: 375px) and (max-width: 812px) {
-  .title1 {
-    font-size: 1rem;
-  }
-}
-
 .title1:hover {
   color: #8f63c9;
 }
