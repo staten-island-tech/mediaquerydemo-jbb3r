@@ -9,53 +9,73 @@
   position: absolute;
   top: 30%;
   left: 15%;
-  font-family: "Ibarra Real Nova", serif;
+  font-family: 'Ibarra Real Nova', serif;
   color: $deep;
   font-size: 8rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: .5rem;
   overflow: hidden;
   @include phone {
-    font-size: 4rem;
+    font-size: 5rem;
+    left: 22%;
+    top: 1%;
+  }
+  @include tablet {
+    top: 2%;
+    left: 35%;
+  }
+  @include laptop {
+    top: 1%;
+    left: 33%;
   }
 }
 .title2:hover {
-  color: $pink;
+color: $pink;
 }
 
-.title2::after {
-  content: "";
-  position: absolute;
-  height: 8px;
-  width: 100%;
-  top: 55%;
-  right: 0;
-  background: $slate;
-  transform: translate3d(-100%, 0, 0);
-  transition: transform 0.3s;
-  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+.title2::after{
+content:'';
+position: absolute;
+height: 8px;
+width: 100%;
+top: 55%;
+right: 0;
+background: $slate;
+transform: translate3d(-100%,0,0);
+transition: transform 0.3s;
+transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
 .title2:hover::after {
-  transform: translate3d(100%, 0, 0);
+transform: translate3d(100%,0,0);
 }
 
 .title2::before {
-  content: attr(data-letters);
-  color: $pink;
+content: attr(data-letters);
+color:$pink;
 }
 
 .title2:hover::before {
-  width: 100%;
+width: 100%;
 }
 .projectwork {
-  display: flex;
+  display:flex;
   flex-direction: column;
   margin-left: 70rem;
   transform: translateY(15rem);
-  width: 100rem;
-  font-family: "Ibarra Real Nova", serif;
+  width:100rem;
+  font-family: 'Ibarra Real Nova', serif;
   @include phone {
-    object-position: left;
+    margin-left: 1em;
+    width: 34rem;
+  }
+  @include tablet {
+    margin-left: 10rem;
+    width: 80rem;
+    transform: translateY(30rem);
+  }
+  @include laptop {
+    margin-left: 6.5rem;
+    transform: translateY(20rem);
   }
 }
 
@@ -67,8 +87,8 @@
   color: $purple;
 }
 
-.f1title {
-  transition: transform 0.2s;
+.f1title{
+  transition: transform .2s;
 }
 .f1title:hover {
   transform: scale(1.15);
@@ -79,15 +99,15 @@
   display: flex;
 
   font-size: 1.5rem;
-  padding: 3rem;
+  padding:3rem;
   color: $purple;
 }
 
 .flexcloud {
-  width: 70%;
-  height: auto;
-  padding-left: 4rem;
-  padding-right: 4rem;
+    width: 70%;
+    height: auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 .f3 {
   background: $lightPink;
@@ -98,7 +118,7 @@
 }
 
 .f3title {
-  transition: transform 0.2s;
+  transition: transform .2s;
 }
 
 .f3title:hover {

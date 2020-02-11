@@ -9,16 +9,32 @@
   position: absolute;
   top: 30%;
   left: 15%;
-  font-family: "Ibarra Real Nova", serif;
+  font-family: 'Ibarra Real Nova', serif;
   color: #2a054d;
   font-size: 8rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: .5rem;
   overflow: hidden;
 }
 
 @media (min-width: 375px) and (max-width: 812px) {
   .title2 {
-    font-size: 4rem;
+    font-size: 5rem;
+    left: 22%;
+    top: 1%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title2 {
+    top: 2%;
+    left: 35%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  .title2 {
+    top: 1%;
+    left: 33%;
   }
 }
 
@@ -27,7 +43,7 @@
 }
 
 .title2::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 8px;
   width: 100%;
@@ -70,13 +86,30 @@
   -webkit-transform: translateY(15rem);
           transform: translateY(15rem);
   width: 100rem;
-  font-family: "Ibarra Real Nova", serif;
+  font-family: 'Ibarra Real Nova', serif;
 }
 
 @media (min-width: 375px) and (max-width: 812px) {
   .projectwork {
-    -o-object-position: left;
-       object-position: left;
+    margin-left: 1em;
+    width: 34rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .projectwork {
+    margin-left: 10rem;
+    width: 80rem;
+    -webkit-transform: translateY(30rem);
+            transform: translateY(30rem);
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  .projectwork {
+    margin-left: 6.5rem;
+    -webkit-transform: translateY(20rem);
+            transform: translateY(20rem);
   }
 }
 
@@ -89,10 +122,10 @@
 }
 
 .f1title {
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
 }
 
 .f1title:hover {
@@ -130,10 +163,10 @@
 }
 
 .f3title {
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
 }
 
 .f3title:hover {
@@ -240,7 +273,7 @@ html {
 }
 
 .slideshow {
-  width: auto;
+  width: 100%;
   height: 100%;
   z-index: -1;
   overflow: hidden;
@@ -251,31 +284,10 @@ html {
   -webkit-animation: slideshow 100s infinite;
           animation: slideshow 100s infinite;
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   opacity: 0;
-}
-
-@media (min-width: 375px) and (max-width: 812px) {
-  .slideshow img {
-    height: 90rem;
-    -o-object-fit: scale-down;
-       object-fit: scale-down;
-    width: auto;
-  }
-}
-
-@media (min-width: 813px) and (max-width: 1024px) {
-  .slideshow img {
-    width: auto;
-    height: 100vh;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .slideshow img {
-    width: 99vw;
-    height: 100vh;
-  }
 }
 
 @-webkit-keyframes slideshow {
@@ -354,8 +366,19 @@ html {
 
 @media (min-width: 375px) and (max-width: 812px) {
   .title1 {
-    -o-object-position: 19% 0;
-       object-position: 19% 0;
+    font-size: 0em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title1 {
+    font-size: 0rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  .title1 {
+    font-size: 3rem;
   }
 }
 
@@ -383,15 +406,36 @@ html {
 
 @media (min-width: 375px) and (max-width: 812px) {
   .word-container {
-    font-size: 2rem;
-    letter-spacing: normal;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    font-size: 3.5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 7rem;
+    line-height: 8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .word-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  .word-container {
+    -webkit-transform: translateY(-56rem);
+            transform: translateY(-56rem);
   }
 }
 
