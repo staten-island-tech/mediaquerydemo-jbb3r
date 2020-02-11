@@ -17,10 +17,10 @@
   @include phone {
     font-size: 5rem;
     left: 22%;
-    top: 1%;
+    top: 10%;
   }
   @include tablet {
-    top: 2%;
+    top: 23%;
     left: 35%;
   }
   @include laptop {
@@ -67,14 +67,15 @@ width: 100%;
   @include phone {
     margin-left: 1em;
     width: 34rem;
+    transform: translateY(25rem);
   }
   @include tablet {
-    margin-left: 10rem;
-    width: 80rem;
-    transform: translateY(30rem);
+    margin-left: 12.5rem;
+    width: 50rem;
+    transform: translateY(40rem);
   }
   @include laptop {
-    margin-left: 6.5rem;
+    margin-left: 5rem;
     transform: translateY(20rem);
   }
 }
