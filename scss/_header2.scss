@@ -25,7 +25,7 @@
     }
     @include laptop {
         top: 1%;
-        left: 33%;
+        left: 17%;
     }
 }
 
@@ -60,26 +60,29 @@
 }
 
 .projectwork {
-    width: 45rem;
-    height: 45rem;
+    width: 80rem;
+    height: 60rem;
     display: flex;
     overflow-x: auto;
-    transform: translate(160%, 25%);
+    transform: translate(90%, 20%);
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    @include laptop {
+        transform: translate(30%,27%);
+    }
 }
 
 .flexcloud {
-    width: 45rem;
+    width: 80rem;
     flex-shrink: 0;
     height: 100%;
 }
 
 .projectworkbtns>a {
     display: inline-flex;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     background: $pink;
     text-decoration: none;
     align-items: center;
@@ -87,15 +90,21 @@
     border-radius: 50%;
     font-weight: bolder;
     color: $slate;
-    transform: translate(3700%, 400%);
+    transform: translate(3100%, 320%);
+    @include laptop {
+        transform: translate(2750%, 320%);
+    }
 }
 
 .view {
     font-size: 3rem;
     font-weight: lighter;
     color: $pink;
-    transform: translate(53%, 260%);
+    transform: translate(56%, 280%);
     cursor: pointer;
+    @include laptop {
+        transform: translate(63%, 380%);
+    }
 }
 
 .view:hover {

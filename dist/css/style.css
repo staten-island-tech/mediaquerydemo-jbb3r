@@ -34,7 +34,7 @@
 @media (min-width: 900px) and (max-width: 1440px) {
   .title2 {
     top: 1%;
-    left: 33%;
+    left: 17%;
   }
 }
 
@@ -75,22 +75,29 @@
 }
 
 .projectwork {
-  width: 45rem;
-  height: 45rem;
+  width: 80rem;
+  height: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
-  -webkit-transform: translate(160%, 25%);
-          transform: translate(160%, 25%);
+  -webkit-transform: translate(90%, 20%);
+          transform: translate(90%, 20%);
   -webkit-overflow-scrolling: touch;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
 
+@media (min-width: 900px) and (max-width: 1440px) {
+  .projectwork {
+    -webkit-transform: translate(30%, 27%);
+            transform: translate(30%, 27%);
+  }
+}
+
 .flexcloud {
-  width: 45rem;
+  width: 80rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   height: 100%;
@@ -100,8 +107,8 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   background: rgba(255, 107, 181, 0.651);
   text-decoration: none;
   -webkit-box-align: center;
@@ -113,17 +120,31 @@
   border-radius: 50%;
   font-weight: bolder;
   color: #f3eaea;
-  -webkit-transform: translate(3700%, 400%);
-          transform: translate(3700%, 400%);
+  -webkit-transform: translate(3100%, 320%);
+          transform: translate(3100%, 320%);
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  .projectworkbtns > a {
+    -webkit-transform: translate(2750%, 320%);
+            transform: translate(2750%, 320%);
+  }
 }
 
 .view {
   font-size: 3rem;
   font-weight: lighter;
   color: rgba(255, 107, 181, 0.651);
-  -webkit-transform: translate(53%, 260%);
-          transform: translate(53%, 260%);
+  -webkit-transform: translate(56%, 280%);
+          transform: translate(56%, 280%);
   cursor: pointer;
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  .view {
+    -webkit-transform: translate(63%, 380%);
+            transform: translate(63%, 380%);
+  }
 }
 
 .view:hover {
@@ -263,15 +284,13 @@ html {
   display: flex;
   -webkit-transform: translateY(-59rem);
           transform: translateY(-59rem);
-  letter-spacing: .75rem;
+  letter-spacing: 0.75rem;
   font-size: 4rem;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   z-index: 2;
-  padding-right: 40rem;
-  padding-left: 40rem;
-  font-family: 'Ibarra Real Nova', serif;
+  font-family: "Ibarra Real Nova", serif;
   color: #f3eaea;
 }
 
@@ -282,23 +301,21 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    padding-left: 7rem;
-    line-height: 8rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 9rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .word-container {
-    padding-left: 25rem;
     font-size: 4rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    line-height: 8rem;
+    line-height: 9rem;
     -ms-flex-line-pack: center;
         align-content: center;
   }
@@ -308,7 +325,8 @@ html {
   .word-container {
     -webkit-transform: translateY(-56rem);
             transform: translateY(-56rem);
-    padding-right: 36rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -316,8 +334,8 @@ html {
   cursor: pointer;
   position: relative;
   padding: 10px 20px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .projects:after, .projects:before {
@@ -325,8 +343,8 @@ html {
   width: 10px;
   height: 10px;
   position: absolute;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .projects:after {
@@ -352,8 +370,8 @@ html {
   cursor: pointer;
   position: relative;
   padding: 10px 20px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .about:after, .about:before {
@@ -361,8 +379,8 @@ html {
   width: 10px;
   height: 10px;
   position: absolute;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .about:after {
@@ -388,8 +406,8 @@ html {
   cursor: pointer;
   position: relative;
   padding: 10px 20px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .contact:after, .contact:before {
@@ -397,8 +415,8 @@ html {
   width: 10px;
   height: 10px;
   position: absolute;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .contact:after {
