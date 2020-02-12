@@ -1,136 +1,103 @@
 .header2 {
-  position: relative;
-  height: 100vh;
-  background-color: $slate;
-  margin-top: 0rem;
+    position: relative;
+    height: 100vh;
+    background-color: $slate;
+    margin-top: 0rem;
 }
 
 .title2 {
-  position: absolute;
-  top: 30%;
-  left: 15%;
-  font-family: 'Ibarra Real Nova', serif;
-  color: $deep;
-  font-size: 8rem;
-  letter-spacing: .5rem;
-  overflow: hidden;
-  @include phone {
-    font-size: 5rem;
-    left: 22%;
-    top: 10%;
-  }
-  @include tablet {
-    top: 23%;
-    left: 35%;
-  }
-  @include laptop {
-    top: 1%;
-    left: 33%;
-  }
-}
-.title2:hover {
-color: $pink;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-family: 'Ibarra Real Nova', serif;
+    color: $deep;
+    font-size: 8rem;
+    letter-spacing: .5rem;
+    overflow: hidden;
+    @include phone {
+        font-size: 5rem;
+        left: 22%;
+        top: 10%;
+    }
+    @include tablet {
+        top: 23%;
+        left: 35%;
+    }
+    @include laptop {
+        top: 1%;
+        left: 33%;
+    }
 }
 
-.title2::after{
-content:'';
-position: absolute;
-height: 8px;
-width: 100%;
-top: 55%;
-right: 0;
-background: $slate;
-transform: translate3d(-100%,0,0);
-transition: transform 0.3s;
-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+.title2:hover {
+    color: $pink;
+}
+
+.title2::after {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    top: 55%;
+    right: 0;
+    background: $slate;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 0.3s;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
 .title2:hover::after {
-transform: translate3d(100%,0,0);
+    transform: translate3d(100%, 0, 0);
 }
 
 .title2::before {
-content: attr(data-letters);
-color:$pink;
+    content: attr(data-letters);
+    color: $pink;
 }
 
 .title2:hover::before {
-width: 100%;
+    width: 100%;
 }
+
 .projectwork {
-  display:flex;
-  flex-direction: column;
-  margin-left: 70rem;
-  transform: translateY(15rem);
-  width:100rem;
-  font-family: 'Ibarra Real Nova', serif;
-  @include phone {
-    margin-left: 1em;
-    width: 34rem;
-    transform: translateY(25rem);
-  }
-  @include tablet {
-    margin-left: 12.5rem;
-    width: 50rem;
-    transform: translateY(40rem);
-  }
-  @include laptop {
-    margin-left: 5rem;
-    transform: translateY(20rem);
-  }
-}
-
-.f1 {
-  background: $lightPink;
-  text-align: center;
-  font-size: 3rem;
-  padding-top: 3rem;
-  color: $purple;
-}
-
-.f1title{
-  transition: transform .2s;
-}
-.f1title:hover {
-  transform: scale(1.15);
-}
-.f2 {
-  background: $lightPink;
-  flex-direction: row;
-  display: flex;
-
-  font-size: 1.5rem;
-  padding:3rem;
-  color: $purple;
+    width: 45rem;
+    height: 45rem;
+    display: flex;
+    overflow-x: auto;
+    transform: translate(160%, 25%);
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .flexcloud {
-    width: 70%;
-    height: auto;
-    padding-left: 4rem;
-    padding-right: 4rem;
-}
-.f3 {
-  background: $lightPink;
-  text-align: center;
-  font-size: 3rem;
-  color: $purple;
-  padding-bottom: 3rem;
+    width: 45rem;
+    flex-shrink: 0;
+    height: 100%;
 }
 
-.f3title {
-  transition: transform .2s;
+.projectworkbtns>a {
+    display: inline-flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: $pink;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bolder;
+    color: $slate;
+    transform: translate(3700%, 400%);
 }
 
-.f3title:hover {
-  transform: scale(1.15);
-}
-.ssrightbtn {
-  background: transparent;
-  border: none;
+.view {
+    font-size: 3rem;
+    font-weight: lighter;
+    color: $pink;
+    transform: translate(53%, 260%);
+    cursor: pointer;
 }
 
-.ssleftbtn {
-  background: transparent;
-  border: none;
+.view:hover {
+    color: $deep;
 }
