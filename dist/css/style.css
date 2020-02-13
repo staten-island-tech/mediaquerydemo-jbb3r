@@ -3,6 +3,7 @@
   height: 100vh;
   background-color: #f3eaea;
   margin-top: 0rem;
+  overflow: hidden;
 }
 
 .title2 {
@@ -26,7 +27,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .title2 {
-    top: 23%;
+    top: 3%;
     left: 35%;
   }
 }
@@ -96,6 +97,15 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .projectwork {
+    width: 60rem;
+    height: 60rem;
+    -webkit-transform: translate(13%, 20%);
+            transform: translate(13%, 20%);
+  }
+}
+
 .flexcloud {
   width: 80rem;
   -ms-flex-negative: 0;
@@ -131,6 +141,13 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .projectworkbtns > a {
+    -webkit-transform: translate(900%, 50%);
+            transform: translate(900%, 50%);
+  }
+}
+
 .view {
   font-size: 3rem;
   font-weight: lighter;
@@ -144,6 +161,13 @@
   .view {
     -webkit-transform: translate(63%, 380%);
             transform: translate(63%, 380%);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .view {
+    -webkit-transform: translate(42%, 320%);
+            transform: translate(42%, 320%);
   }
 }
 
