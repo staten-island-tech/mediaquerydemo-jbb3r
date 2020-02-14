@@ -1,4 +1,4 @@
-.header2 {
+/*.header2 {
     position: relative;
     height: 100vh;
     background-color: $slate;
@@ -10,7 +10,6 @@
     position: absolute;
     top: 30%;
     left: 15%;
-    font-family: 'Ibarra Real Nova', serif;
     color: $deep;
     font-size: 8rem;
     letter-spacing: .5rem;
@@ -61,7 +60,7 @@
 }
 
 .projectwork {
-    width: 80rem;
+    width: 60rem;
     height: 60rem;
     display: flex;
     overflow-x: auto;
@@ -75,7 +74,12 @@
     @include tablet {
         width: 60rem;
         height: 60rem;
-        transform: translate(13%,20%);
+        transform: translate(63%,20%);
+    }
+    @include phone {
+        transform: translate(10%, 90%);
+        width: 30rem;
+        height: 30rem;
     }
 }
 
@@ -103,6 +107,9 @@
     @include tablet {
         transform: translate(900%,50%);
     }
+    @include phone {
+        transform: translate(420%,750%);
+    }
 }
 
 .view {
@@ -117,8 +124,11 @@
     @include tablet {
         transform: translate(42%,320%);
     }
+    @include phone {
+        transform: translate(32%, 750%);
+    }
 }
 
 .view:hover {
     color: $deep;
-}
+}*/
