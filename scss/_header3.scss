@@ -1,6 +1,19 @@
 .header3 {
     height: 100vh;
-    background-color: $slate;
+    background-color: $lightPink;
     margin-top: 0%;
     display: flex;
+}
+
+.title3 {
+    color: $slate;
+    font-size: 8rem;
+    letter-spacing: 0.5rem;
+    overflow: hidden;
+    @include phone {
+      font-size: 3rem;
+    }
+    @include tablet{
+      font-size: 5rem;
+    }
 }

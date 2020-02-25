@@ -1,40 +1,45 @@
 .header2 {
-    position: relative;
     height: 100vh;
     background-color: $slate;
-    margin-top: 0rem;
-    overflow: hidden;
-}
-
-.title2 {
-    position: absolute;
-    top: 30%;
-    left: 15%;
+    margin-top: 0%;
+  }
+   
+     
+  .projectwork-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10rem;
+    @include phone{
+      align-items: center;
+      flex-direction: column;
+      padding-top: 3rem;
+    }
+    @include tablet{
+      padding-top: 6rem;
+    }
+  }
+   
+  .title2 {
     color: $deep;
     font-size: 8rem;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     overflow: hidden;
     @include phone {
-        font-size: 5rem;
-        left: 22%;
-        top: 10%;
+      font-size: 3rem;
     }
-    @include tablet {
-        top: 3%;
-        left: 35%;
+    @include tablet{
+      font-size: 5rem;
     }
-    @include laptop {
-        top: 1%;
-        left: 17%;
-    }
-}
-
-.title2:hover {
+  }
+   
+  .title2:hover {
     color: $pink;
-}
-
-.title2::after {
-    content: '';
+  }
+   
+  .title2::after {
+    content: "";
     position: absolute;
     height: 8px;
     width: 100%;
@@ -44,52 +49,33 @@
     transform: translate3d(-100%, 0, 0);
     transition: transform 0.3s;
     transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-}
-
-.title2:hover::after {
+  }
+   
+  .title2:hover::after {
     transform: translate3d(100%, 0, 0);
-}
-
-.title2::before {
+  }
+   
+  .title2::before {
     content: attr(data-letters);
     color: $pink;
-}
-
-.title2:hover::before {
+  }
+   
+  .title2:hover::before {
     width: 100%;
-}
-
-.projectwork {
-    width: 60rem;
-    height: 60rem;
-    display: flex;
-    overflow-x: auto;
-    transform: translate(90%, 20%);
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    @include laptop {
-        transform: translate(30%,27%);
-    }
-    @include tablet {
-        width: 60rem;
-        height: 60rem;
-        transform: translate(63%,20%);
-    }
-    @include phone {
-        transform: translate(10%, 90%);
-        width: 30rem;
-        height: 30rem;
-    }
-}
-
-.flexcloud {
-    width: 80rem;
-    flex-shrink: 0;
-    height: 100%;
-}
-
-.projectworkbtns>a {
+  }
+  
+  .view {
+    font-size: 3rem;
+    font-weight: lighter;
+    color: $pink;
+    cursor: pointer;
+  }
+   
+  .view:hover {
+    color: $deep;
+  }
+  
+  .projectworkbtns > a {
     display: inline-flex;
     width: 3.5rem;
     height: 3.5rem;
@@ -100,35 +86,46 @@
     border-radius: 50%;
     font-weight: bolder;
     color: $slate;
-    transform: translate(3100%, 320%);
-    @include laptop {
-        transform: translate(2750%, 320%);
-    }
-    @include tablet {
-        transform: translate(900%,50%);
-    }
-    @include phone {
-        transform: translate(420%,750%);
-    }
-}
+  
+  }
+   
+  .bigbox {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
-.view {
-    font-size: 3rem;
-    font-weight: lighter;
-    color: $pink;
-    transform: translate(56%, 280%);
-    cursor: pointer;
-    @include laptop {
-        transform: translate(63%, 380%);
+  .projectwork {
+    display: flex;
+    width: 60rem;
+    height: 60rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    @include phone{
+      width: 30rem;
+      height: 30rem;
     }
-    @include tablet {
-        transform: translate(42%,320%);
+    @include tablet{
+      width: 40rem;
+      height: 40rem;
     }
-    @include phone {
-        transform: translate(32%, 750%);
-    }
-}
+  }
+   
 
-.view:hover {
-    color: $deep;
-}
+ 
+  .flexcloud {
+    width: 80rem;
+    flex-shrink: 0;
+    height: 100%;
+    @include phone{
+      width: 30rem;
+    }
+    @include tablet{
+      width: 40rem;
+    }
+  }
+   
+  
