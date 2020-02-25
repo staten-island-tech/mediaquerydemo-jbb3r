@@ -1,6 +1,6 @@
 .header2 {
   height: 100vh;
-  background-color: #f3eaea;
+  background-color: #f8efef;
   margin-top: 0%;
 }
 
@@ -20,7 +20,7 @@
           justify-content: center;
   border-radius: 50%;
   font-weight: bolder;
-  color: #f3eaea;
+  color: #f8efef;
 }
 
 .projectworkbtns {
@@ -129,7 +129,7 @@
   width: 100%;
   top: 55%;
   right: 0;
-  background: #f3eaea;
+  background: #f8efef;
   -webkit-transform: translate3d(-100%, 0, 0);
           transform: translate3d(-100%, 0, 0);
   -webkit-transition: -webkit-transform 0.3s;
@@ -260,7 +260,7 @@ html {
           transform: translate(-50%, -50%);
   font-size: 2rem;
   z-index: 2;
-  color: #f3eaea;
+  color: #f8efef;
 }
 
 @media (min-width: 375px) and (max-width: 812px) {
@@ -300,7 +300,7 @@ html {
   padding-right: 40rem;
   padding-left: 40rem;
   font-family: 'Ibarra Real Nova', serif;
-  color: #f3eaea;
+  color: #f8efef;
 }
 
 @media (min-width: 375px) and (max-width: 812px) {
@@ -353,15 +353,15 @@ html {
 .projects:after {
   top: -1px;
   left: -1px;
-  border-top: 4px solid #f3eaea;
-  border-left: 4px solid #f3eaea;
+  border-top: 4px solid #f8efef;
+  border-left: 4px solid #f8efef;
 }
 
 .projects:before {
   bottom: -1px;
   right: -1px;
-  border-bottom: 4px solid #f3eaea;
-  border-right: 4px solid #f3eaea;
+  border-bottom: 4px solid #f8efef;
+  border-right: 4px solid #f8efef;
 }
 
 .projects:hover:before, .projects:hover:after {
@@ -389,15 +389,15 @@ html {
 .shop:after {
   top: -1px;
   left: -1px;
-  border-top: 4px solid #f3eaea;
-  border-left: 4px solid #f3eaea;
+  border-top: 4px solid #f8efef;
+  border-left: 4px solid #f8efef;
 }
 
 .shop:before {
   bottom: -1px;
   right: -1px;
-  border-bottom: 4px solid #f3eaea;
-  border-right: 4px solid #f3eaea;
+  border-bottom: 4px solid #f8efef;
+  border-right: 4px solid #f8efef;
 }
 
 .shop:hover:before, .shop:hover:after {
@@ -425,15 +425,15 @@ html {
 .contact:after {
   top: -1px;
   left: -1px;
-  border-top: 4px solid #f3eaea;
-  border-left: 4px solid #f3eaea;
+  border-top: 4px solid #f8efef;
+  border-left: 4px solid #f8efef;
 }
 
 .contact:before {
   bottom: -1px;
   right: -1px;
-  border-bottom: 4px solid #f3eaea;
-  border-right: 4px solid #f3eaea;
+  border-bottom: 4px solid #f8efef;
+  border-right: 4px solid #f8efef;
 }
 
 .contact:hover:before, .contact:hover:after {
@@ -446,6 +446,6 @@ html {
 }
 
 body {
-  background-color: #f3eaea;
+  background-color: #f8efef;
 }
 /*# sourceMappingURL=style.css.map */
