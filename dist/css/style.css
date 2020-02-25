@@ -5,18 +5,103 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.title2 {
+  color: #2a054d;
+  font-size: 8rem;
+  letter-spacing: .5rem;
+  overflow: hidden;
+}
+
+.title2:hover {
+  color: rgba(255, 107, 181, 0.651);
+}
+
+.title2::after {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  top: 55%;
+  right: 0;
+  background: #f3eaea;
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+          transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.title2:hover::after {
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
+
+.title2::before {
+  content: attr(data-letters);
+  color: rgba(255, 107, 181, 0.651);
+}
+
+.title2:hover::before {
+  width: 100%;
 }
 
 .projectwork {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 60rem;
+  height: 60rem;
+  overflow-x: auto;
+  -webkit-transform: translate(90%, 20%);
+          transform: translate(90%, 20%);
+  -webkit-overflow-scrolling: touch;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.flexcloud {
+  width: 80rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 100%;
+}
+
+.projectworkbtns > a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: rgba(255, 107, 181, 0.651);
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  font-weight: bolder;
+  color: #f3eaea;
+}
+
+.view {
+  font-size: 3rem;
+  font-weight: lighter;
+  color: rgba(255, 107, 181, 0.651);
+  cursor: pointer;
+}
+
+.view:hover {
+  color: #2a054d;
 }
 
 html {
