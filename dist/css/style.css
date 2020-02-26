@@ -487,7 +487,7 @@ html {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .title3 {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 }
 
@@ -507,16 +507,75 @@ html {
   height: 40%;
 }
 
+@media (min-width: 375px) and (max-width: 812px) {
+  .cloudgallery {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cloudgallery {
+    width: 90%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  .cloudgallery {
+    width: 90%;
+  }
+}
+
 .flexgallery {
   width: 35rem;
   height: 35rem;
   padding: 1rem;
 }
 
+@media (min-width: 375px) and (max-width: 812px) {
+  .flexgallery {
+    width: 20rem;
+    height: 12rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .flexgallery {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  .flexgallery {
+    width: 29rem;
+    height: 29rem;
+  }
+}
+
 .flexgallery1 {
   width: 53.55rem;
   height: 30rem;
   padding: 1rem;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .flexgallery1 {
+    width: 20rem;
+    height: 12rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .flexgallery1 {
+    width: 31rem;
+    height: 25rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  .flexgallery1 {
+    width: 45rem;
+  }
 }
 
 .h3flex {

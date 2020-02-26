@@ -12,7 +12,7 @@
       font-size: 3rem;
     }
     @include tablet{
-      font-size: 5rem;
+      font-size: 7rem;
     }
 }
 
@@ -23,18 +23,50 @@
   flex-wrap: wrap;
   width: 60%;
   height: 40%;
+  @include phone{
+    width: 75%;
+  }
+  @include tablet{
+    width: 90%;
+  }
+  @include laptop{
+    width: 90%;
+  }
 }
 
 .flexgallery{
   width: 35rem;
   height: 35rem;
   padding: 1rem;
+  @include phone{
+    width: 20rem;
+    height: 12rem;
+  }
+  @include tablet{
+    width: 20rem;
+    height: 20rem;
+  }
+  @include laptop{
+    width: 29rem;
+    height: 29rem;
+  }
 }
 
 .flexgallery1{
   width:53.55rem;
   height: 30rem;
   padding: 1rem;
+  @include phone{
+    width: 20rem;
+    height: 12rem;
+  }
+  @include tablet{
+    width: 31rem;
+    height: 25rem;
+  }
+  @include laptop{
+    width: 45rem;
+  }
 }
 .h3flex{
   display: flex;
