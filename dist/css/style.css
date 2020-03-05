@@ -561,6 +561,181 @@ html {
           flex-direction: column;
 }
 
+.header4 {
+  height: 100vh;
+  background-color: #f8efef;
+  margin-top: 0%;
+}
+
+.h4flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10rem;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .h4flex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .h4flex {
+    padding-top: 6rem;
+  }
+}
+
+.titleflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title4 {
+  color: #2a054d;
+  font-size: 8rem;
+  letter-spacing: 0.5rem;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .title4 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title4 {
+    font-size: 5rem;
+  }
+}
+
+.title4:hover {
+  color: rgba(255, 107, 181, 0.651);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.titleparagraph {
+  color: #2a054d;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  width: 50%;
+}
+
+.h4boxbtns > a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: rgba(255, 107, 181, 0.651);
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  font-weight: bolder;
+  color: #f8efef;
+}
+
+.h4box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactwork {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60rem;
+  height: 60rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .contactwork {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contactwork {
+    width: 40rem;
+    height: 40rem;
+  }
+}
+
+.contactcloud {
+  width: 80rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 100%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 1;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .contactcloud {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contactcloud {
+    width: 40rem;
+  }
+}
+
+.contactcloud:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  opacity: .5;
+}
+
 html {
   font-family: 'Ibarra Real Nova', serif;
 }
