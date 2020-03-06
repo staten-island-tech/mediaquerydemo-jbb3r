@@ -101,6 +101,7 @@ html{
   padding-left: 40rem;
   font-family: 'Ibarra Real Nova', serif;
   color: $slate;
+  
   @include phone {
     font-size: 3.5rem;
     flex-direction: column;
@@ -118,7 +119,12 @@ html{
   }
 }
 
+
 .projects{
+  margin: 0 auto;
+  border-right: solid 2px $slate;
+  white-space: nowrap;
+  overflow: hidden;
   cursor:pointer;
     position:relative;
     padding:10px 20px;
@@ -150,7 +156,17 @@ html{
     }
   }
 
+  /* Animation */
+.projects {
+  animation: animated-text1 5s steps(20,end) 1s infinite normal both,
+             animated-cursor 600ms steps(20,end) infinite;
+}
+
   .shop{
+    margin: 0 auto;
+    border-right: solid 2px $slate;
+    white-space: nowrap;
+    overflow: hidden;
     cursor:pointer;
       position:relative;
       padding:10px 20px;
@@ -182,7 +198,16 @@ html{
       }
     }
   
+    .shop {
+      animation: animated-text2 5s steps(20,end) 1s infinite normal both,
+             animated-cursor 600ms steps(20,end) infinite;
+    }
+
     .contact{
+    margin: 0 auto;
+    border-right: solid 2px $slate;
+    white-space: nowrap;
+    overflow: hidden;
       cursor:pointer;
         position:relative;
         padding:10px 20px;
@@ -213,3 +238,34 @@ html{
           }
         }
       }
+
+      .contact {
+        animation: animated-text3 5s steps(20,end) 1s infinite normal both,
+        animated-cursor 600ms steps(20,end) infinite;
+      }
+      /* text animation */
+
+@keyframes animated-text1{
+  from{width: 0;}
+  to{width: 205px;}
+}
+
+
+@keyframes animated-text2{
+  from{width: 0;}
+  to{width: 115px;}
+}
+
+
+@keyframes animated-text3{
+  from{width: 0;}
+  to{width: 185px;}
+}
+
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: $slate;}
+  to{border-right-color: transparent;}
+}

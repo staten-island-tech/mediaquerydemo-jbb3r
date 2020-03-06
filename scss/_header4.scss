@@ -6,9 +6,10 @@
 
 .h4flex {
     width: 100%;
+    height: 50%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: baseline;
     @include phone {
         align-items: center;
         flex-direction: column-reverse;
@@ -23,14 +24,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-right: 30rem;
-    padding-top: 2rem;
-    @include laptop{
-        padding-right: 0rem;
-    }
-    @include phone{
-        padding-right: 0rem;
-    }
+    width: 30%;
 }
 
 .title4 {
@@ -55,7 +49,7 @@
     color: $deep;
     font-size: 2rem;
     letter-spacing: 0.1rem;
-    width: 45%;
+
   
 }
 
@@ -63,7 +57,6 @@
     color: $lightPink;
     font-size: 2rem;
     letter-spacing: 0.1rem;
-    width: 45%;
 }
 
 .h4boxbtns>a {
@@ -84,8 +77,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding-left: 30rem;
-    padding-top: 15rem;
+
 }
 
 .contactwork {
@@ -108,8 +100,6 @@
 
 .contactcloud {
     width: 80rem;
-    flex-shrink: 0;
-    height: 100%;
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
