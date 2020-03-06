@@ -690,13 +690,20 @@ html {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding-top: 3rem;
+    height: 100%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .h4flex {
-    padding-top: 6rem;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
@@ -712,6 +719,24 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 30%;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .titleflex {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .titleflex {
+    width: 70%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  .titleflex {
+    width: 60%;
+  }
 }
 
 .title4 {
@@ -742,6 +767,18 @@ html {
   color: #2a054d;
   font-size: 2rem;
   letter-spacing: 0.1rem;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .titleparagraph {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  .titleparagraph {
+    width: 80%;
+  }
 }
 
 .titleparagraph:hover {
@@ -783,6 +820,21 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .h4box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .h4box {
+    padding-bottom: 5rem;
+  }
 }
 
 .contactwork {
