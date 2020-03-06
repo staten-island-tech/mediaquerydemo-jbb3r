@@ -255,6 +255,10 @@ html {
           transform: translate(-50%, -50%);
   font-size: 2rem;
   z-index: 2;
+  margin: 0 auto;
+  border-right: solid 2px #f8efef;
+  white-space: nowrap;
+  overflow: hidden;
   color: #f8efef;
 }
 
@@ -279,6 +283,11 @@ html {
 .title1:hover {
   color: #8f63c9;
   cursor: pointer;
+}
+
+.title1 {
+  -webkit-animation: animated-text 3s steps(20, end) 1s infinite normal both, animated-cursor 600ms steps(20, end) infinite;
+          animation: animated-text 3s steps(20, end) 1s infinite normal both, animated-cursor 600ms steps(20, end) infinite;
 }
 
 .word-container {
@@ -466,6 +475,23 @@ html {
 }
 
 /* text animation */
+@-webkit-keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70px;
+  }
+}
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70px;
+  }
+}
+
 @-webkit-keyframes animated-text1 {
   from {
     width: 0;
@@ -474,6 +500,7 @@ html {
     width: 205px;
   }
 }
+
 @keyframes animated-text1 {
   from {
     width: 0;
@@ -575,6 +602,7 @@ html {
       flex-wrap: wrap;
   width: 60%;
   height: 40%;
+  cursor: pointer;
 }
 
 @media (min-width: 375px) and (max-width: 812px) {

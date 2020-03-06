@@ -72,6 +72,10 @@ html{
     transform: translate(-50%,-50%);
     font-size: 2rem;
     z-index:2;
+    margin: 0 auto;
+    border-right: solid 2px $slate;
+    white-space: nowrap;
+    overflow: hidden;
     color: $slate;
     @include phone {
       font-size: 0em;
@@ -89,6 +93,10 @@ html{
     cursor: pointer;
 }
 
+.title1 {
+  animation: animated-text 3s steps(20,end) 1s infinite normal both,
+             animated-cursor 600ms steps(20,end) infinite;
+}
 // for menu
 .word-container {
   display: flex;
@@ -244,6 +252,11 @@ html{
         animated-cursor 600ms steps(20,end) infinite;
       }
       /* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 70px;}
+}
 
 @keyframes animated-text1{
   from{width: 0;}
